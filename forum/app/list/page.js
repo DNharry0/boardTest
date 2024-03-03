@@ -7,7 +7,7 @@ export default async function List() {
 
   return (
     <div className="list-bg">
-      {result.map((post, i) =>
+      {result.map((i) =>
         <div className="list-item" key={i}>
           <Link prefetch={false} href={"/detail/"+ result[i]._id}>
             <h4>{result[i].title}</h4>
